@@ -10,3 +10,6 @@
    >Because initially we were tracking data/ folder from git so now we remove it for DVC to handle. 
 9. Again we do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
 10. now dvc commit and push. : to put the data into remote store to S3.
+11. Do a git add-commit-push to mark this stage as first version of data.
+12. Now make changes to mycode.py to append a new row in data, check changes via "dvc status"
+13. Again - - "dvc commit" and then "dvc push"
