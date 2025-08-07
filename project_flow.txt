@@ -16,3 +16,9 @@
 14. Then git add-commit-push (we're saving V2 of our data at this point)
 15. Check dvc/git status, everything should be upto date.
 16. Now repeat step 10-12 for v3 of data.
+
+
+# to restore----
+git log --oneline	
+git checkout sha_id	
+dvc pull	
