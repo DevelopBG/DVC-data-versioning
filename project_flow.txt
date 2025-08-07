@@ -1,3 +1,11 @@
 1. create a git repo and clone it locally
 2. create a file code.py and add code to it. ( it will save a csv file to a new)
-push it into git.
+3. push it into git.
+4. pip instal dvc
+5. dvc init ( creates .dvcignore, .dvc)
+6. make a dir of s3 ( mkdir S3- linux command), considering an aws s3 bucket, later we will see the aws integration 
+7. New we do "dvc remote add -d myromote S3" : to tell dvc which one is remote origin. 
+8. Next "dvc add data/" 
+   >Now it will ask to do: ("git rm -r --cached 'data'" and "git commit -m "stop tracking data"")
+   >Because initially we were tracking data/ folder from git so now we remove it for DVC to handle. 
+9. Again we do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
